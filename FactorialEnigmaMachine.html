@@ -1,0 +1,37 @@
+<HTML>
+        <!--Have the function FirstFactorial(num) take the num parameter being passed and return the factorial of it (e.g. if num = 4, return (4 * 3 * 2 * 1)). 
+            For the test cases, the range will be between 1 and 18 and the input will always be an integer. -->
+    <head>
+        <title>"Learning Javascript with Yasiru"</title>
+        <style>
+            #display {
+                color:chocolate;
+
+            }
+        </style>
+    </head>
+
+    <body>
+       <button onclick="learnFunc()">Click me to learn what is a function!</button>
+       <h1 id="display">"Your guide to being a billionare!"</h1>
+       <input type ="text" id="textbox" value = "0"></input>
+       
+       <script>
+            document.getElementById("textbox").addEventListener(input, function() {
+                var num = document.getElementById("textbox").value;
+                //console.log(document.getElementById("textbox").value);
+                factorial = 0;
+                first = 1;
+                console.log("A function is a block of code designed to perform a particular task!");
+                for(var i = 0; i < num; i++){
+                    factorial = num - i;
+                    console.log("This is the factorial" + factorial);
+                    first = factorial * first;
+                    console.log("This is the First" + first);
+                }
+                console.log("This is the final Answer" + first);
+                document.getElementById("display").innerHTML = first;
+            });
+        </script>
+    </body>
+    </HTML>           
